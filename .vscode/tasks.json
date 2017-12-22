@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build_console",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/VSCodeTutorial.ConsoleApp/VSCodeTutorial.ConsoleApp.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "UnitTest",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/VSCodeTutorial.UnitTest/VSCodeTutorial.UnitTest.csproj"
+            ],
+            "group": "test",
+            "problemMatcher": "$msCompile"
+        }        
+    ]
+}
